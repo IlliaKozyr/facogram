@@ -1,0 +1,23 @@
+.small {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.changeAvatar {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.changeAvatar img{
+    margin-top: 10px;
+} 
+
+.dropZoneStyle {
+    display: flex;
+    flex-direction: column;
+}

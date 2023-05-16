@@ -1,0 +1,35 @@
+html, 
+body {
+    // height: 300px;
+    background-color: rgb(227, 227, 227);
+}
+
+#root {
+    background-color: rgb(227, 227, 227);
+}
+
+.mainContainer {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    max-height: 92.8vh;
+    background-color: rgb(227, 227, 227);
+    
+}
+
+.mainContainerForOther {
+    height: 92.8vh;
+    background-color: rgb(227, 227, 227);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+.avatarStubChat2 {
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: #0d6efd;
+}
