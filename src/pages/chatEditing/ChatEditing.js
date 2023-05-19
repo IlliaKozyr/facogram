@@ -228,7 +228,7 @@ const ChatEditing = ({
                                         {login?.avatar !== null ? (
                                             <CSearchAvatar avatarUrl={login} />
                                         ) : (
-                                            <div className="avatarStubChat2"></div>
+                                            <div className="stubAvatar"><p className="textLogo">{login.login.slice(0, 1)}</p></div>
                                         )}
 
                                         <div>

@@ -7,8 +7,6 @@
         width: 100%;
         justify-content: space-evenly;
         align-items: center;
-
-        
     }
 
     .editingChatForm {
@@ -23,15 +21,15 @@
         }
 
         .profileStyle {
-            height: 150px;
-            width: 150px !important
+            height: 100px;
+            width: 100px !important;
         }
 
         .profileContainer {
             padding: 0;
             width: 100%;
-    
-            .inputContainer input{ 
+
+            .inputContainer input {
                 width: 33vw;
                 margin: 0 0 20px 0;
             }
@@ -62,7 +60,6 @@
         flex-direction: column;
         overflow: auto;
         max-height: 60vh;
-        
 
         .membersBlock {
             display: flex;
@@ -70,7 +67,6 @@
             align-items: center;
             margin: 5px 0;
             width: 20vw;
-
 
             .searchBlock {
                 margin: 0;
@@ -83,4 +79,7 @@
     }
 }
 
-
+.textLogo {
+    color: #4c91c7;
+    font-size: 25px;
+}

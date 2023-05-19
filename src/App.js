@@ -101,6 +101,8 @@ import { CChatEditing } from "./pages/chatEditing/ChatEditing";
 
 export const history = createBrowserHistory();
 
+console.log(history, "it`s history")
+
 const AuthSwitch = ({ token }) => {
   useEffect(() => {
     if (token) {
@@ -124,9 +126,9 @@ const AuthSwitch = ({ token }) => {
       <Header />
 
       <div className="mainContainer">
-               <Route path="/main" component={CChatsAside} />
-                <Route path="/main/:_id" component={CChatMsgs} />
-                <Redirect to="/main" />
+              <Route path="/main" component={CChatsAside} />
+              <Route path="/main/:_id" component={CChatMsgs} />
+              <Redirect to="/main" />
             </div>
 
       {/* <div className="mainContainer"> */}

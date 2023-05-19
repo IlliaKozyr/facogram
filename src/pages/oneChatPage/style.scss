@@ -1,7 +1,7 @@
 .chatBlock {
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: calc(100vh - 70px);
     .displayFixed {
         display: flex;
         align-items: center;
@@ -172,6 +172,24 @@
 }
 .noMsg {
     display: flex;
-    
+
     justify-content: center;
+}
+
+@media (max-width: 767px) {
+    .msgsContainer {
+        width: 100vw;
+    }
+    .chatBlock {
+        display: flex;
+        justify-content: space-between;
+        .msgLi {
+            width: 60%;
+            margin-left: 37%;
+        }
+
+        .msgOther {
+            width: 60%;
+        }
+    }
 }

@@ -68,11 +68,10 @@ const ChatMsgs = ({
     const buttonRef = useRef(null);
 
     const handleKeyPress = (event) => {
-        if (event.key === 'Enter') {
-          buttonRef.current.click();
-          
+        if (event.key === "Enter") {
+            buttonRef.current.click();
         }
-      };
+    };
     return (
         <>
             <div className="chatBlock overflow-block">
@@ -167,7 +166,7 @@ const ChatMsgs = ({
                     </ul>
                 </div>
 
-                <div>
+                <div className="sandAMessageBlock">
                     {oneChatMsgs === getChat[_id] ? (
                         <></>
                     ) : (
@@ -192,7 +191,10 @@ const ChatMsgs = ({
                             </div>
 
                             <div className="sendMsgBlock">
-                                <div className="sendBlock" onKeyDown={handleKeyPress}>
+                                <div
+                                    className="sendBlock"
+                                    onKeyDown={handleKeyPress}
+                                >
                                     <div
                                         {...getRootProps({
                                             className: "dropZoneStyle2",
